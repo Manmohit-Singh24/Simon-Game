@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Simon</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!----------               <! ------------------ 'Google Fonts' ------------------ !>               --------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap"
+          rel="stylesheet">
+    <!----------               <! --------------------- *** --------------------- !>               --------->
+
+    <!----------               <! ------------------ 'Font Awesome' ------------------ !>               --------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!----------               <! --------------------- *** --------------------- !>               --------->
+
+</head>
+
+<body>
+
+<!--=============================================== 'Instructions' Section ===============================================-->
+<i class="fa-solid fa-circle-info"></i>
+<div class="info i-hide" style="display: none">
+    <h2>How to Play Simon Game</h2>
+
+    <ul>
+        <li>
+            <h3>Start the Game:</h3>
+            <ul>
+                <li>The game begins with a random color being highlighted and played as a sound.</li>
+                <li>The player must repeat the color by clicking on the corresponding button.</li>
+            </ul>
+        </li>
+
+        <li>
+            <h3>Sequence Repeats:</h3>
+            <ul>
+                <li>If the player correctly repeats the sequence, the game adds another color to the sequence.</li>
+                <li>The player must now repeat the entire sequence, including the new color.</li>
+            </ul>
+        </li>
+
+        <li>
+            <h3>Increasing Difficulty:</h3>
+            <ul>
+                <li>With each round, the sequence grows longer, testing the player's memory and ability to replicate the
+                    pattern.
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <h3>Game Over:</h3>
+            <ul>
+                <li>The game ends when the player makes a mistake by clicking the wrong button or failing to replicate
+                    the sequence correctly.
+                </li>
+                <li>The game usually provides feedback like a distinct sound or a visual effect indicating the
+                    mistake.
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <h3>Restarting:</h3>
+            <ul>
+                <li>After a game over, the player can start a new game, often by pressing a button or key.</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<!----------               <! --------------------- **** 'Instructions' **** --------------------- !>               --------->
+
+<!--=============================================== 'Game' Section ===============================================-->
+<div class="container">
+    <h1>Press A Key to Start...</h1>
+    <div class="buttons">
+        <div class="btn green">
+            <audio src="sounds/green.mp3"></audio>
+        </div>
+        <div class="btn red">
+            <audio src="sounds/red.mp3"></audio>
+        </div>
+        <div class="btn yellow">
+            <audio src="sounds/yellow.mp3"></audio>
+        </div>
+        <div class="btn blue">
+            <audio src="sounds/blue.mp3"></audio>
+        </div>
+    </div>
+</div>
+<audio class="game-over" src="sounds/wrong.mp3"></audio>
+<!----------               <! --------------------- **** 'Game' **** --------------------- !>               --------->
+
+</body>
+<script src="index.js" type="text/javascript"></script>
+</html>
