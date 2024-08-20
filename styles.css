@@ -363,6 +363,7 @@ h1 {
     }
 
     .h1 {
+        padding-inline : 3rem ;
         h1 {
             text-wrap: wrap !important;
         }
